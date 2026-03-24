@@ -1,0 +1,7 @@
+.butt{
+    background-color: black;
+    color: #34C94b;
+    border-radius: 12px;
+    padding:6px;
+    cursor: pointer;
+}
