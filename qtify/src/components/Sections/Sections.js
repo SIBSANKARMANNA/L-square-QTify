@@ -48,7 +48,7 @@ const Sections = ({ title, endpoint }) => {
             320: { slidesPerView: 2 },
             635: { slidesPerView: 3 },
             768: { slidesPerView: 5 },
-            1024: { slidesPerView: 8 },
+            1024: { slidesPerView: 10 },
           }}
         >
           {albums.map((album) => (
