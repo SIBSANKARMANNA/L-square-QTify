@@ -1,0 +1,42 @@
+.card {
+  width: 159px;
+  height: 232px;
+  gap:6px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 160px;;
+}
+
+.card-bottom {
+  text-align: left;
+  background: white;
+  padding: 6px;
+  border-radius: 0 0 10px 10px;
+  gap:1px;
+  height: 35px;
+}
+
+.badge {
+  background: black !important;
+  color: white !important;
+  /* position:relative;
+  top:176px;
+  left:8px; */
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 9px !important;
+  /* height: 23px; */
+  width: 85px;
+}
+
+.card-title {
+  margin-top: 6px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: poppins;
+  font-weight: 400;
+  height: 21px;
+}

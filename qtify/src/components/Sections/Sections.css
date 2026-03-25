@@ -1,0 +1,40 @@
+.albums-section {
+  padding: 10px;
+  background-color: black;
+  margin-top: 0px;
+}
+
+.albums-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 40px;
+}
+
+.show-all-btn {
+  background: none;
+  border: none;
+  color: #34c94b;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Grid view */
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #eaeeeb !important;
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50%;
+  background-color: #34c94b;
+  padding: 8px;
+}
