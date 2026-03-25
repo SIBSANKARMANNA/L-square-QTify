@@ -9,8 +9,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Sections title="Top Albums" endpoint="top" />
-      <Sections title="New Albums" endpoint="new" />
+      <div className='bottom-space'>
+        <Sections title="Top Albums" endpoint="top" />
+        <Sections title="New Albums" endpoint="new" />
+      </div>
+      
       <hr
         style={{
           border: "none",
