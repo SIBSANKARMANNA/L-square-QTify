@@ -7,7 +7,7 @@ import Card from "../Card/Card";
 import LeftNavButton from "./LeftNavButton";
 import RightNavButton from "./RightNavButton";
 
-const Carousel = ({ data }) => {
+const Carousel = ({ data, tab }) => {
   const swiperRef = useRef(null);
 
   return (
@@ -22,12 +22,12 @@ const Carousel = ({ data }) => {
                 320: { slidesPerView: 2 },
                 635: { slidesPerView: 3 },
                 768: { slidesPerView: 5 },
-                1024: { slidesPerView: 6 },
+                1024: { slidesPerView: 8 },
               }}
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
-              <Card album={item} />
+              <Card album={item} tab={tab} />
             </SwiperSlide>
           ))}
         </Swiper>

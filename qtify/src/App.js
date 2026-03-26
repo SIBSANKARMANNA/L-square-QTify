@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <Hero />
       <div className='bottom-space'>
-        <Sections title="Top Albums" endpoint="top" />
-        <Sections title="New Albums" endpoint="new" />
+        <Sections title="Top Albums" endpoint="albums/top" />
+        <Sections title="New Albums" endpoint="albums/new" />
       </div>
       
       <hr
@@ -23,7 +23,7 @@ function App() {
           margin: "auto auto"
         }}
       />
-      <Sections title="New Albums" endpoint="new" />
+      <Sections title="Songs" endpoint="songs" tab={true} />
     </div>
   );
 }

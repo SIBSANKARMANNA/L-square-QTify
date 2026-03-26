@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 import "./Card.css";
 import Typography from "@mui/material/Typography";
 
-const Card = ({ album }) => {
+const Card = ({ album ,tab}) => {
   return (
     <div className="card">
       <img src={album.image} alt={album.title} />
@@ -12,7 +12,7 @@ const Card = ({ album }) => {
       <Stack  className="card-bottom">
         <Chip
           className="badge"
-          label={`${album.follows} Follows`}
+          label={`${!tab?album.follows:album.likes} ${tab ? "Likes" : "Follows"}`}
         />
       </Stack>
 
