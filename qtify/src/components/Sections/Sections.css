@@ -28,13 +28,3 @@
   margin-top: 20px;
 }
 
-/* Swiper arrows */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #eaeeeb !important;
-  height: 10px !important;
-  width: 10px !important;
-  border-radius: 50%;
-  background-color: #34c94b;
-  padding: 8px;
-}

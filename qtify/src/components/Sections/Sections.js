@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Sections.css";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
-
 import Card from "../Card/Card";
+import Carousel from "../Carousel/Carousel";
 
 const Sections = ({ title, endpoint }) => {
   const [albums, setAlbums] = useState([]);
@@ -40,23 +36,7 @@ const Sections = ({ title, endpoint }) => {
           ))}
         </div>
       ) : (
-        <Swiper
-          modules={[Navigation]}
-          spaceBetween={3}
-          navigation
-          breakpoints={{
-            320: { slidesPerView: 2 },
-            635: { slidesPerView: 3 },
-            768: { slidesPerView: 5 },
-            1024: { slidesPerView: 10 },
-          }}
-        >
-          {albums.map((album) => (
-            <SwiperSlide key={album.id}>
-              <Card album={album} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <Carousel data={albums} />
       )}
     </div>
   );
