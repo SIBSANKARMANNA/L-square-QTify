@@ -19,10 +19,11 @@ const Carousel = ({ data, tab }) => {
           spaceBetween={20}
           // navigation
           breakpoints={{
-                320: { slidesPerView: 2 },
-                635: { slidesPerView: 3 },
-                768: { slidesPerView: 5 },
-                1024: { slidesPerView: 8 },
+                320: { slidesPerView: 3 },
+                530: { slidesPerView: 4 },
+                // 635: { slidesPerView: 3 },
+                860: { slidesPerView: 6 },
+                1374: { slidesPerView: 9 },
               }}
         >
           {data.map((item) => (
