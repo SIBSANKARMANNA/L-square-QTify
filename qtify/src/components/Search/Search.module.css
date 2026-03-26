@@ -5,7 +5,7 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   border: 1px solid black;
-  width: 352px;
+  max-width: 352px;
 }
 
 .wrapper {

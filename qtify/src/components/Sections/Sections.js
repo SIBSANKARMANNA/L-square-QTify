@@ -16,25 +16,18 @@ const Sections = ({ title, endpoint, tab = false }) => {
       .catch((err) => console.error(err));
   }, [endpoint]);
  
-  const data= [
-        {
-        key: "jazz",
-        label: "Jazz"
-        },
-        {
-        key: "rock",
-        label: "Rock"
-        },
-        {
-        key: "pop",
-        label: "Pop"
-        },
-        {
-        key: "blues",
-        label: "Blues"
-        }
-      ]
-const filteredAlbums = tab ? albums.filter(album => album.genre?.key === data[value].key) : albums;
+  const data = [
+  { key: "all", label: "All" },
+  { key: "jazz", label: "Jazz" },
+  { key: "rock", label: "Rock" },
+  { key: "pop", label: "Pop" },
+  { key: "blues", label: "Blues" },
+];
+
+const filteredData =
+  tab && data[value].key !== "all"
+    ? albums.filter((item) => item.genre?.key === data[value].key)
+    : albums;
 // console.log('filteredAlbums',filteredAlbums);
   return (
     <div className="albums-section">
@@ -61,7 +54,7 @@ const filteredAlbums = tab ? albums.filter(album => album.genre?.key === data[va
 
           <CustomTabs value={value} onChange={setValue} tabs={data} />
 
-          <Carousel data={filteredAlbums} tab={tab} />
+          <Carousel data={filteredData} tab={tab} />
         </>
       ) : (
         /* 🔥 NORMAL MODE */
